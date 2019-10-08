@@ -1,0 +1,59 @@
+{
+  "_from": "git+https://github.com/amandacampideli/adaptive-icon-plugin.git",
+  "_id": "cordova-plugin-adaptiveiconplugin@0.0.1",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-adaptiveiconplugin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/amandacampideli/adaptive-icon-plugin.git",
+    "rawSpec": "https://github.com/amandacampideli/adaptive-icon-plugin.git",
+    "saveSpec": "git+https://github.com/amandacampideli/adaptive-icon-plugin.git",
+    "fetchSpec": "https://github.com/amandacampideli/adaptive-icon-plugin.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/amandacampideli/adaptive-icon-plugin.git#366300cbc223760bb7c51a5a03a39495b39f8b03",
+  "_spec": "https://github.com/amandacampideli/adaptive-icon-plugin.git",
+  "_where": "C:\\Users\\Amanda Campideli\\Documents\\plugin\\teste",
+  "author": {
+    "name": "Amanda Campideli",
+    "email": "amandacampideli@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/amandacampideli/adaptive-icon-plugin/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-adaptiveiconplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Plugin para implementar ícones adaptáveis em apps Android",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/amandacampideli/adaptive-icon-plugin/",
+  "keywords": [
+    "Cordova",
+    "Android",
+    "Adaptive",
+    "Icon"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-adaptiveiconplugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amandacampideli/adaptive-icon-plugin.git"
+  },
+  "version": "0.0.1"
+}

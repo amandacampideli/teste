@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-adaptiveiconplugin" version="0.0.1">
+    <name>AdaptiveIconPlugin</name>
+
+    <description>Plugin para implementar ícones adaptáveis em apps Android</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,adaptive,icon</keywords>
+    <repo>https://github.com/amandacampideli/adaptive-icon-plugin.git</repo>
+    <issue>https://github.com/amandacampideli/adaptive-icon-plugin/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="adaptiveIconPlugin">
+                <param name="android-package" value="com.amandacampideli.cordova.plugin.AdaptiveIconPlugin"/>
+            </feature>
+        </config-file>
+        
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" />
+        </edit-config>
+        
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" />
+
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-hdpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-ldpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-mdpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-xhdpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-xxhdpi-v26/ic_launcher.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher.xml" target="././platforms/android/app/src/main/res/mipmap-xxxhdpi-v26/ic_launcher.xml" />
+
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-hdpi-v26/ic_launcher_round.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-ldpi-v26/ic_launcher_round.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-mdpi-v26/ic_launcher_round.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-xhdpi-v26/ic_launcher_round.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-xxhdpi-v26/ic_launcher_round.xml" />
+        <resource-file src="resources/android/mipmap-anydpi-v26/ic_launcher_round.xml" target="././platforms/android/app/src/main/res/mipmap-xxxhdpi-v26/ic_launcher_round.xml" />
+
+        <resource-file src="resources/android/mipmap-hdpi/ic_launcher.png" target="././platforms/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+        <resource-file src="resources/android/mipmap-hdpi/ic_launcher_foreground.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" />
+        <resource-file src="resources/android/mipmap-hdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-hdpi/ic_launcher_round.png" />
+        <resource-file src="resources/android/mipmap-mdpi/ic_launcher.png" target="app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+        <resource-file src="resources/android/mipmap-mdpi/ic_launcher_foreground.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" />
+        <resource-file src="resources/android/mipmap-mdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-mdpi/ic_launcher_round.png" />
+        <resource-file src="resources/android/mipmap-xhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+        <resource-file src="resources/android/mipmap-xhdpi/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" />
+        <resource-file src="resources/android/mipmap-xhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" />
+        <resource-file src="resources/android/mipmap-xxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+        <resource-file src="resources/android/mipmap-xxhdpi/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" />
+        <resource-file src="resources/android/mipmap-xxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" />
+        <resource-file src="resources/android/mipmap-xxxhdpi/ic_launcher.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" />
+        <resource-file src="resources/android/mipmap-xxxhdpi/ic_launcher_foreground.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" />
+        <resource-file src="resources/android/mipmap-xxxhdpi/ic_launcher_round.png" target="app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />
+        <resource-file src="resources/android/values/ic_launcher_background.xml" target="app/src/main/res/values/ic_launcher_background.xml" />
+
+        <hook type="before_build" src="hooks/setRes.js" />
+    </platform>
+</plugin>
